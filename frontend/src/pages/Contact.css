@@ -1,0 +1,39 @@
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background-color: #efefef;
+  padding: 1.2rem 1.5rem;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.contact-card:hover {
+  background-color: #e2e2e2;
+}
+
+.contact-label {
+  font-size: 0.8rem;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.contact-value {
+  font-size: 1rem;
+  color: var(--text-h);
+}
+
+@media (max-width: 767px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
